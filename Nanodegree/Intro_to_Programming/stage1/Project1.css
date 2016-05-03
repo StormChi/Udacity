@@ -1,0 +1,53 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+}
+
+.moha {
+    display: -webkit-flex;
+    display: flex;
+    background-color: #c9db92;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px auto;
+
+}
+
+.description {
+    color: #7C8B88;
+    max-width: 706px;
+    font-size: 18px
+}
+
+.screenshot {
+    max-width: 460px;
+    margin: 0px 10px 0px 0px;
+}
+
+.tiny_picture {
+    width: 30px;
+}
+
+.ha_picture {
+    width: 400px;
+    height: 500px;
+}
+
+.title {
+    background-color: #33BEBE;
+    color: white;
+    padding: 10px 0 0 10px;
+    font-size: 48px
+}
+
+
+
+
+
