@@ -33,7 +33,13 @@ code6 = code5.capitalize
 puts code6
 
 
-
+#another
+puts code.slice(1..-1).
+  insert(11, "A EW? O").
+  delete('Q?,').
+  downcase.
+  reverse.
+  capitalize
 
 
 
