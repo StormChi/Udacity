@@ -4,7 +4,8 @@ file = File.read(path)
 products_hash = JSON.parse(file)
 
 # Print today's date
-
+time = Time.now.strftime("%m/%d/%Y")
+puts "Today's Date: #{time}"
 puts "                     _            _       "
 puts "                    | |          | |      "
 puts " _ __  _ __ ___   __| |_   _  ___| |_ ___ "
@@ -30,12 +31,14 @@ products_hash["items"].each do |toy|
   total_number =  toy["purchases"].length
   total_sales =  toy["purchases"][0]["price"] + toy["purchases"][1]["price"]
 	average_price = total_sales / total_number
-  average_discount = (retail_price - average_price) / retail_price
-	puts "retail_price: $#{retail_price}"
-	puts "total_number: #{total_number}"
-	puts "total_sales: $#{total_sales}"
-	puts "average_price: $#{average_price}"
-	puts "average_discount: #{'%.04f' % average_discount}" # i don't know how to become percentage
+	average_discount = retail_price - average_price
+  average_discount_p = ((retail_price - average_price) / retail_price) * 100
+	puts "Retail Price: $#{retail_price}"
+	puts "Total Purchases: #{total_number}"
+	puts "Total Sales: $#{total_sales}"
+	puts "Average Price: $#{average_price}"
+	puts "Average Discount $#{average_discount}"
+	puts "Average Discount Percentage: #{'%.02f' % average_discount_p}%"
 	puts "*" * 30
   puts ""
 end
