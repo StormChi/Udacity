@@ -27,15 +27,25 @@
     margin: 15px;
 }
 
-.fp {
+.first_p {
     font-style: italic;
 }
 
 .list {
     font-style: italic;
+
 }
 
 .type {
     font-weight: bold;
     font-style: normal;
+}
+.left {
+  padding-left: 20px;
+}
+
+.intro {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
 }
