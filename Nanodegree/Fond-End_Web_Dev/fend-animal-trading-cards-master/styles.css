@@ -1,0 +1,41 @@
+/* add your CSS here */
+
+
+
+.box1 {
+    border: 2px solid darkgrey;
+    box-shadow: 5px 5px 20px #ccc;
+    width: 600px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.box2 {
+
+     border: 2px solid darkgrey;
+     margin: 15px;
+     padding: 20px;
+}
+
+.picture {
+    width: 300px;
+    margin: 15px;
+}
+
+.title{
+    font-size: 2em;
+    margin: 15px;
+}
+
+.fp {
+    font-style: italic;
+}
+
+.list {
+    font-style: italic;
+}
+
+.type {
+    font-weight: bold;
+    font-style: normal;
+}
