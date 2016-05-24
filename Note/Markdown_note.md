@@ -3,8 +3,9 @@ Udacity course **Writing READMEs**
 I'm learning _Markdown_
 looks like use `strong` and `em` tag
 ## Resources
-Here's a link to the basic [Markdown documentation](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-GitHub flavored Markdown [here](https://help.github.com/categories/writing-on-github/).
+- Here's a link to the basic [Markdown documentation](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+- GitHub flavored Markdown [here](https://help.github.com/categories/writing-on-github/).
+- To preview Markdown in the browser, try [Dillinger](http://dillinger.io/).
 
 # My Fabulous Recipe
 This recipe for **cereal and milk** has been passed down my family for months.
@@ -18,4 +19,6 @@ If I were writing these out as _code_, it might look something like this:
 if bowl is empty:
   add cereal
 if bowl only has cereal in it:
-  add milk```
+  add milk
+```
+Excited :+1:s
