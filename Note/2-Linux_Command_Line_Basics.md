@@ -45,5 +45,8 @@
 `bc`               # calculator
 `pwd`
 `cd /var/log`
+`mkdir /tmp/cache`
+`rm -r junk`
+
 
 
