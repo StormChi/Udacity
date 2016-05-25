@@ -31,3 +31,19 @@
 - `history`
 - `Ctrl + R` reverse i search 
 
+# Common Commands
+`ls`
+`unzip things.zip`
+`cat gastropods.txt`                          # read files
+`wc bivalves.txt`                             # word count
+`diff gastropods.txt gagstropods_draft.txt`
+`ls -a`                                       # list all
+`ls -l`                                       # list 
+`rm -rf /`
+`ping 8.8.8.8`     use `Ctrl + C` to stop
+`sort`             use `Ctrl + D` to sort, end the file. looks like the ucsd course should also use `Ctrl + D`
+`bc`               # calculator
+`pwd`
+`cd /var/log`
+
+
