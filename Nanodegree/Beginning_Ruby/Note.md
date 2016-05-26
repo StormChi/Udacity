@@ -77,4 +77,27 @@ else
 end
 ```
 # Arrays & Hashes
+```Ruby
+friends = ["Mike", "Julia", "Georgia", "Walter"]
 
+puts "I LIKE #{friends[0].upcase}!!!"
+=> I LIKE MIKE!!!
+
+puts "#{friends[3]} backwards is #{friends[3].reverse}"
+=> Walter abckward is retlasW
+
+puts friends.length              # Output: 4
+
+last_index = friends.length - 1
+puts friends[last_index]         # Output: "Walter"
+
+puts friends.first               # Output: Mike
+puts friends.last                # Output: Walter
+```
+``` Ruby
+cheer = [2, 4, 6, 8, "Who do we appreciate?"]
+cheer.reverse!
+puts cheer
+
+=> ["Who do we appreciate?", 8, 6, 4, 2]
+```
