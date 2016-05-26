@@ -77,6 +77,7 @@ else
 end
 ```
 # Arrays & Hashes
+### Arrays
 ```Ruby
 friends = ["Mike", "Julia", "Georgia", "Walter"]
 
@@ -85,7 +86,8 @@ puts "I LIKE #{friends[0].upcase}!!!"
 
 puts "#{friends[3]} backwards is #{friends[3].reverse}"
 => Walter abckward is retlasW
-
+```
+``` Ruby
 puts friends.length              # Output: 4
 
 last_index = friends.length - 1
@@ -94,6 +96,18 @@ puts friends[last_index]         # Output: "Walter"
 puts friends.first               # Output: Mike
 puts friends.last                # Output: Walter
 ```
+### Array Methods
+#### reverse
+``` Ruby
+cheer = [2, 4, 6, 8, "Who do we appreciate?"]
+puts cheer.reverse
+
+=> ["Who do we appreciate?", 8, 6, 4, 2]
+
+cheer
+
+=> [2, 4, 6, 8, "Who do we appreciate?"]
+```
 ``` Ruby
 cheer = [2, 4, 6, 8, "Who do we appreciate?"]
 cheer.reverse!
@@ -101,3 +115,42 @@ puts cheer
 
 => ["Who do we appreciate?", 8, 6, 4, 2]
 ```
+#### sort
+``` Ruby
+numbers = [99, -4, 37, 22]
+numbers.sort
+
+=> [-4, 22, 37, 99]
+```
+``` Ruby
+letters = ["z", "Z", "a", "A", "b"]
+letters.sort
+
+=> ["A", "Z", "a", "b", "z"]
+```
+``` Ruby
+cheer = [2, 4, 6, 8, "Who do we appreciate?"]
+cheer.sort
+
+=> ArgumentError: comparison of Fixnum with String failed
+```
+#### push
+``` Ruby
+cheer = [2, 4, 6, 8, "Who do we appreciate?"]
+cheer.push("Georgia")
+
+=> [2, 4, 6, 8, "Who do we appreciate?", "Georgia"]
+
+# same
+cheer = [2, 4, 6, 8, "Who do we appreciate?"]
+index = cheer.length
+cheer[index] = "Georgia"
+```
+#### pop
+``` Ruby
+cats = ["Rocket", "Scout", "Juliet", "Momofuku"]
+cats.pop
+
+=> ["Rocket", "Scout", "Juliet"]
+```
+
