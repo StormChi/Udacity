@@ -24,7 +24,7 @@
 - `host udacity.com`
 - `bash --version`
 - `history`
-- 'uptime'
+- `uptime`
 
 # Command history
 - up arrow key 
