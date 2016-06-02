@@ -115,7 +115,7 @@ def draw_square():
     window.exitonclick()
     
 draw_square()
-    ```
+```
 ### step 3
 ``` python
 import turtle
