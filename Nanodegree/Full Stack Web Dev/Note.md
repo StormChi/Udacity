@@ -156,7 +156,7 @@ def draw_square(some_turtle):
         some_turtle.forward(100)
         some_turtle.right(90)
 
-def draw art():
+def draw_art():
     window = turtle.Screen()
     window.bgcolor("red")
     #Create the turtle Brad - Draws a Square
@@ -268,7 +268,7 @@ def read_text():
     check_profanity(contents_of_file)
     
 def check_profanity(text_to_check):
-    connection = urllib.urlopen("http://www.wdylike.appspot.com/?q=shot" + text_to_check)
+    connection = urllib.urlopen("http://www.wdylike.appspot.com/?q=shot" + text_to_check)    # doesn't work.
     output = connection.read()
     print(output)
     connection.close()
@@ -287,7 +287,7 @@ def read_text():
     check_profanity(contents_of_file)
 
 def check_profanity(text_to_check):
-    connection = urllib.urlopen("http://www.wdylike.appspot.com/?q="+text_to_check)
+    connection = urllib.urlopen("http://www.wdylike.appspot.com/?q=shot"+text_to_check)
     output = connection.read()
     #print(output)
     connection.close()
