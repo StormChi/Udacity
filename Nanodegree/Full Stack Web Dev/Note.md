@@ -287,7 +287,7 @@ def read_text():
     check_profanity(contents_of_file)
 
 def check_profanity(text_to_check):
-    connection = urllib.urlopen("http://www.wdylike.appspot.com/?q=shot"+text_to_check)
+    connection = urllib.urlopen("http://www.wdylike.appspot.com/?q=shot"+text_to_check)  # doesn't work, the broken link ??
     output = connection.read()
     #print(output)
     connection.close()
@@ -300,5 +300,6 @@ def check_profanity(text_to_check):
 
 read_text()
 ```
-    
+## class movie
+   
 
