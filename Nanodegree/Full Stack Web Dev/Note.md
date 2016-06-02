@@ -57,7 +57,7 @@ def rename_files():
     #print(file_list)
     saved_path = os.getcwd()      # "cwd" current Working Directory
     print("Current Working Directory is " + saved_path)
-    os.chdir(r"/Users/storm/Downloads")
+    os.chdir(r"/Users/storm/Downloads/prank")
     # (2) for each file, rename filename
     for file_name in file_list:
         print("Old Name - " + file_name)
