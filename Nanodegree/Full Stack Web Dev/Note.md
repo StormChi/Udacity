@@ -245,7 +245,7 @@ print message.sid
 ### step 1 read text from document
 ``` python
 def read_text():
-    quotes = open("/Users/storm/Downloads/movie_quote.txt")
+    quotes = open("/Users/storm/Downloads/movie_quotes.txt")
     contents_of_file = quotes.read()
     print(contents_of_file)
     quote.close()
@@ -255,7 +255,7 @@ read_text()
 ``` python
 import urllib 
 def read_text():
-    quotes = open("/Users/storm/Downloads/movie_quote.txt")
+    quotes = open("/Users/storm/Downloads/movie_quotes.txt")
     contents_of_file = quotes.read()
     print(contents_of_file)
     quotes.close()
@@ -274,7 +274,7 @@ read_text()
 import urllib
 
 def read_text():
-    quotes = open("/Users/storm/Downloads/movie_quote.txt")
+    quotes = open("/Users/storm/Downloads/movie_quotes.txt")
     contents_of_file = quotes.read()
     #print(contents_of_file)
     quotes.close()
