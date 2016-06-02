@@ -53,7 +53,7 @@ rename_files()
 import os
 def rename_files():
     # (1) get file names from a folder
-    file_list = os.listdir(r"/Users/storm/Downloads")
+    file_list = os.listdir(r"/Users/storm/Downloads/prank")
     #print(file_list)
     saved_path = os.getcwd()      # "cwd" current Working Directory
     print("Current Working Directory is " + saved_path)
