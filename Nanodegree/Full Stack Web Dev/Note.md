@@ -253,7 +253,7 @@ read_text()
 ```
 ### step 2 check text for curse words
 ``` python
-import urllib.request 
+import urllib
 def read_text():
     quotes = open("/Users/storm/Downloads/movie_quotes.txt")
     contents_of_file = quotes.read()
@@ -262,7 +262,7 @@ def read_text():
     check_profanity(contents_of_file)
     
 def check_profanity(text_to_check):
-    connection = urllib.request.urlopen("http://www.wdyl.com/profanity?q=" + text_to_check)
+    connection = urllib.urlopen("http://www.wdylike.appspot.com/?q=shot" + text_to_check)
     output = connection.read()
     print(output)
     connection.close()
@@ -281,7 +281,7 @@ def read_text():
     check_profanity(contents_of_file)
 
 def check_profanity(text_to_check):
-    connection = urllib.urlopen("http://www.wdyl.com/profanity?q="+text_to_check)
+    connection = urllib.urlopen("http://www.wdylike.appspot.com/?q="+text_to_check)
     output = connection.read()
     #print(output)
     connection.close()
