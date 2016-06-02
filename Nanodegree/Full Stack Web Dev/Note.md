@@ -248,7 +248,7 @@ def read_text():
     quotes = open("/Users/storm/Downloads/movie_quotes.txt")
     contents_of_file = quotes.read()
     print(contents_of_file)
-    quote.close()
+    quotes.close()
 read_text()
 ```
 ### step 2 check text for curse words
