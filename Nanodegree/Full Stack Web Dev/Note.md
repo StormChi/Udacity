@@ -240,5 +240,34 @@ message = client.sms.messages.create(
     from_="+16502854887")       # Replace with your Twilio number
 print message.sid 
 ```
+
+## Reading from a file
+### step 1 read text from document
+``` python
+def read_text():
+    quotes = open("/Users/storm/Downloads/movie_quote.txt")
+    contents_of_file = quotes.read()
+    print(contents_of_file)
+    quote.close()
+read_text()
+```
+### step 2 check text for curse words
+``` python
+import urllib 
+def read_text():
+    quotes = open("/Users/storm/Downloads/movie_quote.txt")
+    contents_of_file = quotes.read()
+    print(contents_of_file)
+    quotes.close()
+    check_profanity(contents_of_file)
+    
+def check_profanity(text_to_check):
+    connection = urllib.urlopen("http://www.wdyl.com/profanity?q=" + text_to_check)
+    output = connection.read()
+    print(output)
+    connection.close()
+
+read_text()
+```
     
 
