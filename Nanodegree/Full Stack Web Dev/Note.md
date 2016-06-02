@@ -87,6 +87,8 @@ def draw_square():
     brad.right(90)
     
     window.exitonclick()
+    
+draw_square()
 ```
 ### step 2
 ``` python
@@ -111,6 +113,8 @@ def draw_square():
     brad.right(90)
     
     window.exitonclick()
+    
+draw_square()
     ```
 ### step 3
 ``` python
@@ -140,6 +144,8 @@ def draw_square():
     angie.circle(100)
     
     window.exitonclick()
+    
+draw_square()
 ```
 ### step 4
 ``` python
