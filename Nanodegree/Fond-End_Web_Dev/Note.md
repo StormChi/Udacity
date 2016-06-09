@@ -55,10 +55,74 @@ console.log(udacityizer(s));
   "Strings"          |           ""
   objects            |          undefined
   arrays             |           null
-  functions          |           NaN
-                     |
-                  
-                  
+  functions          |           NaN(not a number)
+
+### Arrays
+``` JavaScript
+var skills = ["awesomess", "programming", "teaching", "JS"];
+
+$("#main").append(skills);
+$("#main").append(skills[0]);
+$("#main").append(skills.length);
+```                    
+### Array Manipulation
+``` JavaScript
+var sampleArray = [0,0,7];
+
+var incrementLastArrayElement = function(_array) {
+    var newArray = [];
+    // Your code should make newArray equal to an array that has the same
+    // values as _array, but the last number has increased by one.
+    
+    // For example:
+    // _array = [1, 2, 3];
+    // turns into:
+    // newArray = [1, 2, 4];
+    
+    // Your code goes in here!
+    newArray = _array.slice(0);
+    var lastNumber = newArray.pop();
+    newArray.push(lastNumber + 1);
+    return newArray;
+    
+    // Don't delete this line!
+    return newArray;
+};
+
+console.log(incrementLastArrayElement(sampleArray));
+```
+### String Manipulation 2
+``` JavaScript
+var name = "AlbERt EINstEiN";
+
+function nameChanger(oldName) {
+    var finalName = oldName;
+    // my solution
+    //one = finalName[0].toUpperCase() + finalName.slice(1, 6).toLowerCase();
+    //two = finalName.slice(6).toUpperCase();
+    //finalName = one + two;
+    
+    var names = oldName.split(" ");
+    names[1] = names[1].toUpperCase();
+    names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
+    finalName = names.join(" ");
+    
+    
+    return finalName;
+};
+
+console.log(nameChanger(name));
+```                  
+### Object Literal Notation
+``` JavaScript
+var skills = ["awesomeness", "programming", "teaching", "JS"];
+var bio = {
+    "name" : "James",
+    "age" : 32,
+    "skills" : skills
+};
+$("#main").append(bio.name);
+```                  
                   
                   
                   
