@@ -122,7 +122,28 @@ var bio = {
     "skills" : skills
 };
 $("#main").append(bio.name);
-```                  
+```
+### Dot and Bracket Notation
+``` JavaScript
+var skills = ["awesomeness", "programming", "teaching", "JS"];
+var bio = {
+    "name": "James",
+    "age": 32,
+    "skills": skills
+};
+// dot notation
+bio.city = "Mountain View";
+bio.email = "james.williams@udacity.com";
+
+// bracket notation
+bio["city"] = "Mountain View";
+bio["email"] = "james@udacity.com";
+
+$("#main").append(bio.city);
+$("#main").append(bio["city"]);
+
+```
+                 
                   
                   
                   
