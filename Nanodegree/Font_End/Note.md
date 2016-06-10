@@ -143,9 +143,177 @@ $("#main").append(bio.city);
 $("#main").append(bio["city"]);
 
 ```
-                 
-                  
-                  
+### Practice With Objects
+``` JavaScript
+var work = {};
+work.position = "Course Developer";
+work.employer = "Udacity";
+work.years = 0.3;
+
+var education = {};
+education["name"] = "Nova Southeastern University";
+education["years"] = "2005 - 2013"
+education["city"] = "Font Lauderdale, FL, US";;
+
+$("#main").append(work["position"]);  // it's ok 
+$("#main").append(education.name);
+```              
+### JSON （JavaScript Object Notation)
+``` JSON
+var education = {
+  "schools": [
+    {
+      "name": "Eckerd College",
+      "city": "Saint Petersburg, FL, US",
+      "degree": "BA",
+      "major": ["CompSci", "French"]
+    },
+    {
+      "name": "Nova Southeastern University",
+      "city": "Fort Lauderdale, FL, US",
+      "degree": "Masters",
+      "major": ["CompSci"]
+    }
+  ]
+};
+```
+### Validating JSON 
+``` JSON
+var education = {
+  "schools": [
+    {
+      "name": "Nova Southeastern University",
+      "location": "Fort Lauderdale, FL",
+      "degree": "Masters",
+      "majors": ["CS"],
+      "dates": 2013,
+      "url": "http://example.com"
+    },
+    {
+      "name": "Eckerd College",
+      "location": "Saint Petersburg, FL",
+      "degree": "BA",
+      "majors": ["CS"],
+      "dates": 2003,
+      "url": "http://example.com"
+    }
+  ],
+  "onlineCourses": [
+    {
+      "title": "JavaScript Syntax",
+      "school": "Udacity",
+      "date": 2014,
+      "url": "http://www.udacity.com/course/ud804"
+    }
+  ]
+}
+```                  
+### All the Resume Sections
+``` JavaScript
+
+var bio = {
+  "name": "Jonh Doe",
+  "role": "Web Developer",
+  "contacts": {
+    "mobile": "650-555-5555",
+    "email": "john@example.com",
+    "github": "johndoe",
+    "twitter": "johndoe",
+    "location": "San Francisco"
+  },
+  "welcomeMessage": "Welcome",
+  "skills": [
+    "awesomeness", "delivering things", "cryogenic sleep", "saving the universe"
+  ],
+  "bioPic": "images/fry.jpg"
+}
+var education = {
+  "schools": [
+    {
+      "name": "Nova Southeastern University",
+      "city": "Fort",
+      "degree": "Masters",
+      "majors": ["CS"],
+      "dates": 2013,
+      "url": "http://example.com"
+    },
+    {
+      "name": "Eckerd College",
+      "city": "Saint Petersburg, FL",
+      "degree": "BA",
+      "majors": ["CS"],
+      "dates": 2003,
+      "url": "http://example.com"
+    }
+  ],
+  "onlineCourses": [
+    {
+      "title": "JavaScript Crash Course",
+      "school": "Udacity",
+      "dates": 2014,
+      "url": "http://www.udacity.com/course/ud804"
+    }
+  ]
+}
+
+var work = {
+  "jobs": [
+    {
+      "employer": "Planet Express",
+      "title": "Delivery Boy",
+      "dates": "January 3000 - Future"
+      "description": "who moved my cheese"
+    },
+    {
+      "employer": "Panucci's Pizza",
+      "title": "Delivery Boy",
+      "dates": "1998",
+      "description": "who moved"
+    }
+  ]
+}
+
+var projects = {
+  "projects": [
+    {
+      "title": "Sample Project 1",
+      "dates": "2014",
+      "description": "Who moved",
+      "images": [
+        "http://",
+        "http://"
+      ]
+    }
+  ]
+}
+```
+###  If Statements
+``` JavaScript
+if(bio.skills.length > 0) {
+
+  $("#header").append(HTMLskillsStart);
+  
+  var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]); 
+  $("#skills").append(formattedSkill);
+  formattedSkill = HTMLskills.replace("%data%, bio.skills[1]");
+  $("#skills").append(formattedSkill);
+  formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
+  $("#skills").append(formattedSkill);
+  formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
+  $("#skills").append(foramttedSkill);
+}
+```                   
+### While Loops
+``` JavaScript
+var cameron = {};
+cameron.job = "course dev";
+
+var courses = 0;
+while(cameron.job === "course dev") {
+  makeCourse();
+  courses = courses + 1;
+}
+```
                   
                   
                   
