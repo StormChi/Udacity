@@ -308,13 +308,65 @@ if(bio.skills.length > 0) {
 var cameron = {};
 cameron.job = "course dev";
 
+var makeCourse = function() {
+  // make a course
+  console.log("Made a course");
+}
+
 var courses = 0;
 while(cameron.job === "course dev") {
   makeCourse();
   courses = courses + 1;
+  if(courses == 10) {
+    cameron.job = "learning specialist";
+   }
+}
+console.log(cameron.job);
+```
+### For-in Loops
+Use `forEach` or `for` to iterate over arrays like:
+``` 
+countries = ['Argentina', 'China', 'England'];
+```
+Use `for-in` to loop over objects like
+```
+countries = {'country1':'Argentina','country2':'China','country3':'England'};
+```
+``` JavaScript
+myObj = {'country1':'Germany', 'country2':'Argentina'};
+for (key in myObj) {
+  if (myObj.hasOwnProperty(key)) {
+      console.log(myObj[key]);
+  }
 }
 ```
-                  
+``` JavaScript
+var countries = ["germany", "argentina", "brazil", "netherlands"];
+for (country in counties) {
+  console.log(countries[country])
+};
+``` 
+``` JavaScript
+for (job in work.jobs) {
+  $("#workExperience").append(HTMLworkStart);
+  
+  var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+  var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+  var formattedEmployerTitle = formattedEmployer + formattedTitle;
+  
+  $(".work-entry:last").append(formattedEmployerTitle);
+}      
+```
+### Functions
+``` JavaScript
+var myFunc = function(param1, param2) {
+    // code goes here
+}
+
+function myFunc(param1, param2) {
+    // code goes here
+}
+```           
                   
                   
                   
